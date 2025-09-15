@@ -111,11 +111,11 @@ export default function Loading() {
                             height={30}
                             radius={5}
                         />
-                        <Skeleton
+                        {/* <Skeleton
                             width={70}
                             height={30}
                             radius={5}
-                        />
+                        /> */}
                     </Flex>
                 </Box>
 
