@@ -4,6 +4,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { IconArrowNarrowLeft } from '@tabler/icons-react'
 
+
+
+
 interface Country {
     name: {
         common: string
@@ -54,23 +57,40 @@ const Page = async ({ params }: PageProps) => {
 
 
 
-            {/* //s */}
-
             <Flex
                 align={{ base: 'start', sm: 'center' }}
                 direction={{ base: 'column', sm: 'row' }}
                 gap={{ base: 'sm', sm: 'md' }}
                 justify={{ base: 'start', sm: 'space-between' }}
             >
-                {/* <Box mt={20}> */}
-                <Image
+                {/* <Box mt={20} w='100%' bd='1px solid red'> */}
+                {/* <Image
                     src={country.flags.svg}
                     width={500}
                     height={350}
                     alt={country.name.common}
                     style={{ marginTop: '20px' }}
-                // style={{ width: '100%' }}
-                />
+                    className="flag-img"
+                /> */}
+
+                <Box
+                    w={{ base: "100%", sm: "50%" }}
+                    maw={500}
+                    mt="md"
+                >
+                    <Image
+                        src={country.flags.svg}
+                        alt={country.name.common}
+                        width={500}
+                        height={350}
+                        style={{
+                            width: "100%",
+                            height: "auto",
+                        }}
+                    />
+                </Box>
+
+
 
                 {/* </Box> */}
 
@@ -122,17 +142,13 @@ const Page = async ({ params }: PageProps) => {
                         wrap="wrap"
                         rowGap='md'
                         maw={400}
-                        // direction={{ base: 'column', md: 'row' }}
                         gap="sm"
                         mt="lg"
                         align="center"
-                    // bd='1px solid red'
                     >
 
                         <Text fw="bold">Border Countries:</Text>
 
-
-                        {/* <Box w='100%' bd='1px solid red'> */}
 
                         {country.borders && country.borders.length > 0 ? (
 
@@ -149,7 +165,6 @@ const Page = async ({ params }: PageProps) => {
                             <Text ml="sm">None</Text>
                         )}
 
-                        {/* </Box> */}
                     </Flex>
                 </Box>
 

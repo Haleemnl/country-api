@@ -1,0 +1,10 @@
+.flag-img {
+    width: 200px;
+    /* default */
+}
+
+@media (max-width: 768px) {
+    .flag-img {
+        width: 100%;
+    }
+}
