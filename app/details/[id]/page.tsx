@@ -66,7 +66,8 @@ const Page = async ({ params }: PageProps) => {
 
 
                 <Box
-                    w={{ base: "100%", sm: "50%" }}
+                    // w={{ base: "100%", sm: "50%" }}
+                    w="100%"
                     maw={500}
                     mt="lg"
                 >
@@ -77,7 +78,9 @@ const Page = async ({ params }: PageProps) => {
                         height={350}
                         style={{
                             width: "100%",
-                            height: "auto",
+                            height: "300px",
+                            objectFit: 'cover'
+
                         }}
                     />
                 </Box>

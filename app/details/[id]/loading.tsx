@@ -16,12 +16,10 @@ export default function Loading() {
 
 
                 <Skeleton
-
                     maw={400}
                     height={400}
                     radius={5}
                     mx='auto'
-
                 />
 
 
