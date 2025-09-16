@@ -63,20 +63,12 @@ const Page = async ({ params }: PageProps) => {
                 gap={{ base: 'sm', sm: 'md' }}
                 justify={{ base: 'start', sm: 'space-between' }}
             >
-                {/* <Box mt={20} w='100%' bd='1px solid red'> */}
-                {/* <Image
-                    src={country.flags.svg}
-                    width={500}
-                    height={350}
-                    alt={country.name.common}
-                    style={{ marginTop: '20px' }}
-                    className="flag-img"
-                /> */}
+
 
                 <Box
                     w={{ base: "100%", sm: "50%" }}
                     maw={500}
-                    mt="md"
+                    mt="lg"
                 >
                     <Image
                         src={country.flags.svg}
@@ -142,9 +134,9 @@ const Page = async ({ params }: PageProps) => {
                         rowGap='md'
                         maw={400}
                         gap="sm"
-                        mt="lg"
+                        mt={15}
                         align="center"
-                        mb={{ base: 20, sm: 0 }}
+                        mb={{ base: 40, sm: 0 }}
                     >
 
                         <Text fw="bold">Border Countries:</Text>

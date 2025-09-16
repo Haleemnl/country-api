@@ -16,7 +16,8 @@ export default function Loading() {
 
                     width={600}
                     height={400}
-                    radius={10}
+                    radius={5}
+                    mx='auto'
 
                 />
 
