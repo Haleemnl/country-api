@@ -1,4 +1,4 @@
-import { Box, Flex, Skeleton, Text } from '@mantine/core'
+import { Box, Container, Flex, Skeleton, Text } from '@mantine/core'
 import React from 'react'
 
 export default function Loading() {
@@ -6,21 +6,23 @@ export default function Loading() {
         <>
 
             <Flex
-                align={{ base: 'start', sm: 'center' }}
+                align={{ base: 'center', sm: 'center' }}
                 direction={{ base: 'column', sm: 'row' }}
                 gap={{ base: 'sm', sm: 'sm' }}
                 justify={{ base: 'start', sm: 'space-between' }}
+                wrap='wrap'
             >
+
+
 
                 <Skeleton
 
-                    width={600}
+                    maw={400}
                     height={400}
                     radius={5}
                     mx='auto'
 
                 />
-
 
 
 
