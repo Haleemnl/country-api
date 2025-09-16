@@ -94,9 +94,8 @@ const Page = async ({ params }: PageProps) => {
 
                 {/* </Box> */}
 
-
                 {/* text */}
-                <Box maw={400} mt={{ base: 30, sm: 5 }}>
+                <Box maw={400} mt={{ base: 30, sm: 5 }} >
                     <Flex
                         justify={{ base: 'left', sm: "space-between" }}
                         gap="xl" align={{ base: 'start', sm: 'center' }}
@@ -145,6 +144,7 @@ const Page = async ({ params }: PageProps) => {
                         gap="sm"
                         mt="lg"
                         align="center"
+                        mb={{ base: 20, sm: 0 }}
                     >
 
                         <Text fw="bold">Border Countries:</Text>
